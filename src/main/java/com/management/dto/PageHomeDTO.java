@@ -6,14 +6,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class LeadDTO {
-    private String name;
-    private String whatsapp;
-    private String propertyType;
-    private String rangePrice;
+public class PageHomeDTO {
+    private List<HomeDTO> home;
+    private int page;
+    private long size;
+    private boolean last;
 }
